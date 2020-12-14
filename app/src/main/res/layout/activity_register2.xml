@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.something.oyundostum.activities.Register2"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/register"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/background" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/faded"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/faded" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="140dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/josefinsansbold"
+                android:text="@string/register"
+                android:textColor="#E6FFFFFF"
+                android:textSize="33sp"
+                android:textStyle="bold"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/josefinsansregular"
+                android:text="@string/create_a_new_account"
+                android:textColor="#66FFFFFF"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                tools:ignore="UnusedAttribute" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="200dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="48dp"
+                android:id="@+id/username2"
+                android:inputType="text"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/edit_text_style"
+                android:fontFamily="@font/josefinsansbold"
+                android:hint="@string/username"
+                android:paddingStart="20dp"
+                android:paddingLeft="20dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                tools:ignore="RtlSymmetry,UnusedAttribute"
+                android:importantForAutofill="no" />
+
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="48dp"
+                android:id="@+id/password2"
+                android:inputType="textPassword"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/edit_text_style"
+                android:fontFamily="@font/josefinsansbold"
+                android:hint="@string/password"
+                android:paddingStart="20dp"
+                android:paddingLeft="20dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:importantForAutofill="no"
+                tools:ignore="RtlSymmetry,UnusedAttribute" />
+
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="48dp"
+                android:id="@+id/password3"
+                android:inputType="textPassword"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/edit_text_style"
+                android:fontFamily="@font/josefinsansbold"
+                android:hint="@string/confirm_password"
+                android:paddingStart="20dp"
+                android:paddingLeft="20dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:importantForAutofill="no"
+                tools:ignore="RtlSymmetry,UnusedAttribute" />
+
+            <Button
+                android:layout_width="320dp"
+                android:layout_height="48dp"
+                android:id="@+id/registerButton2"
+                android:text="@string/register"
+                android:textAllCaps="false"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/white"
+                android:background="@drawable/login_button_style"
+                android:fontFamily="@font/josefinsansbold"
+                android:textSize="16sp"
+                android:layout_marginBottom="80dp"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/login2"
+                android:gravity="center"
+                android:textColor="#FFF"
+                android:text="@string/already_have_an_account_login"
+                android:fontFamily="@font/josefinsanslight"
+                android:textSize="15sp"
+                tools:ignore="UnusedAttribute" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

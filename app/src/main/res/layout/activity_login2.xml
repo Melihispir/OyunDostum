@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.something.oyundostum.activities.Login2"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/login"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/faded"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giriş Yap"
+        android:layout_above="@id/logintoyouraccount"
+        android:textSize="33sp"
+        android:layout_alignStart="@id/username2"
+        android:textColor="#E6FFFFFF"
+        android:fontFamily="@font/josefinsansbold"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hesabınıza giriş yapın."
+        android:textSize="13sp"
+        android:id="@+id/logintoyouraccount"
+        android:layout_above="@+id/username2"
+        android:layout_alignStart="@id/username2"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#66FFFFFF"
+        android:fontFamily="@font/josefinsansregular"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/username2"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@id/password2"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edit_text_style"
+        android:fontFamily="@font/josefinsansbold"
+        android:hint="Kullanıcı Adı"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:paddingLeft="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/password2"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_above="@+id/forget"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edit_text_style"
+        android:paddingStart="20dp"
+        android:fontFamily="@font/josefinsansbold"
+        android:hint="Şifre"
+        android:inputType="textPassword"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <TextView
+        android:id="@+id/forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="104dp"
+        android:fontFamily="@font/josefinsansregular"
+        android:layout_above="@id/loginButton2"
+        android:layout_alignEnd="@id/loginButton2"
+        android:text="Şifrenizi mi Unuttunuz?"
+        android:layout_marginBottom="30dp"
+        android:textColor="#66FFFFFF"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/loginButton2"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/register2"
+        android:background="@drawable/login_button_style"
+        android:fontFamily="@font/josefinsansbold"
+        android:text="Giriş Yap"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/register2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/josefinsanslight"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="Yeni Hesap Oluştur"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp" />
+
+</RelativeLayout >

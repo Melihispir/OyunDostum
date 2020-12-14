@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    app:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:textColor="#000"
+            android:id="@+id/Oyun_adi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="1dp"
+            android:text="Oyun_adi"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Aciklama"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="1dp"
+            android:text="Aciklama"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="210dp"
+            android:paddingTop="40dp">
+
+            <TextView
+                android:textColor="#000"
+                android:id="@+id/adsoyad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="adsoyad"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                tools:layout_conversion_absoluteHeight="20dp"
+                tools:layout_conversion_absoluteWidth="56dp"
+                tools:layout_editor_absoluteX="210dp"
+                tools:layout_editor_absoluteY="117dp" />
+
+            <Button
+                android:id="@+id/iletisimbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="İletişime Geç"
+                tools:layout_conversion_absoluteHeight="46dp"
+                tools:layout_conversion_absoluteWidth="119dp"
+                tools:layout_editor_absoluteX="266dp"
+                tools:layout_editor_absoluteY="104dp" />
+
+            <ImageView
+                android:id="@+id/downloadicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"
+                tools:layout_conversion_absoluteHeight="43dp"
+                tools:layout_conversion_absoluteWidth="16dp"
+                tools:layout_editor_absoluteX="385dp"
+                tools:layout_editor_absoluteY="104dp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
